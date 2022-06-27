@@ -5,6 +5,15 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    color: #0969da;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .banner::before {
     background-image: url(../images/banner.png);
     background-position: center;
