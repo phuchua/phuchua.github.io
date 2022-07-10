@@ -1,0 +1,10 @@
+body {
+    margin: 0 auto;
+    font-size: 11pt;
+    font-family: "Georgia", "Garamond", sans-serif;
+}
+
+.sample > p {
+    font-style: italic;
+    font-size: 9pt;
+}
