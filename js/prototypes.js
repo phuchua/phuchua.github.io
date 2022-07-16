@@ -7,6 +7,7 @@ Exercise 1:
     console.log("This house is not nice!".filter('not'));
     Output: "This house is nice!"
 */
+console.log("*** Exercise 1 ***");
 String.prototype.filter = function( arg ) {
     return this.replace(arg,"").replace("  "," ");
 };
@@ -20,6 +21,7 @@ Exercise 2:
     Example:[6,4,0, 3,-2,1].bubbleSort();
     Output : [-2, 0, 1, 3, 4, 6]
 */
+console.log("\n*** Exercise 2 ***");
 Array.prototype.bubbleSort = function() {
     var swap = function (arr, index1, index2) {
         const temp = arr[index1];
@@ -61,6 +63,7 @@ instances.
 */
 
 /* 3a */
+console.log("\n*** Exercise 3a ***");
 {
     class Person{
         hobby;
@@ -101,6 +104,7 @@ instances.
 };
 
 /* 3b */
+console.log("\n*** Exercise 3b ***");
 (function (){ 
     const Person = function(name, age)
     {
@@ -155,7 +159,7 @@ Write code that will create person, student, and professor objects.
     • Create a professor object and a student object. Call both the greeting and salutation methods on each.
     • Do this exercise once using the object prototype approach for inheritance and then using the function constructor approach.
 */
-
+console.log("\n*** Exercise 4: using the object prototype approach for inheritance ***");
 (function(){
     class Person {
         name;
@@ -211,6 +215,7 @@ Write code that will create person, student, and professor objects.
     aProfessor.salute();
 })();
 
+console.log("\n*** Exercise 4: using the function constructor approach ***");
 { 
     //Person object
     const Person = function(name, age)
@@ -246,7 +251,7 @@ Write code that will create person, student, and professor objects.
     
     Professor.prototype = Object.create(Person.prototype);
     Professor.prototype.greeting = () => {
-        console.log(self);
+        //console.log(self);
         console.log("Good day, my name is " + this.name + " and I am in the " + this.department + " department.");
     }
     
@@ -259,7 +264,7 @@ Write code that will create person, student, and professor objects.
     aStudent.salute();
 
     const aProfessor = new Professor("Professor C", 55, "Computer Science");
-    console.log(aProfessor);
+    //console.log(aProfessor);
     aProfessor.greeting();
     aProfessor.salute();
 };
