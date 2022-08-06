@@ -82,7 +82,6 @@ div.content {
 
 /* Footer stylesheet */
 .footer-container {
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
